@@ -1,0 +1,3 @@
+Commands:
+1) ls -lhS /var
+2) find /var/log -name "*.log"
