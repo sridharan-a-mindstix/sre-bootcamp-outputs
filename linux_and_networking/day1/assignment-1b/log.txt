@@ -1,0 +1,17 @@
+1) vi secret.txt
+2) chmod 700 secret.txt
+3) vi hello.sh
+    1) why it fails when trying to execute : we didn't add the shibang above the script to inform the system to read it as shell
+    2) we have to give shell commands to execute the file not a simple text 
+    3) we didn't give the execution permission for the file (chmod +x hello.sh)
+    
+4)  chmod 000 hello.sh (removed the access)
+    error i got : zsh: permission denied: ./hello.sh (which means i dont have the permission to access the file)
+    chmod 700 hello.sh (restore the access)
+5)  mkdir shared 
+    2) chmod 755 shared (anyone can enter and read but only i can write)
+
+Reflection question:
+What's the difference between file execute permission and directory execute permission?
+Ans:
+    Execute permissionin file will allow us to run the file as program whereas it will allow users to enter and read contents inside for the directory 

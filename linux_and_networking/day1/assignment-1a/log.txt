@@ -1,3 +1,8 @@
 Commands:
 1) ls -lhS /var
 2) find /var/log -name "*.log"
+3,4,5 ) 
+output:
+sridharan@mindstix-ka-MacBook-Air ~ % find ~/bootcamp -type f
+/Users/sridharan/bootcamp/week1/scripts/day1_backup.txt
+/Users/sridharan/bootcamp/README.md
