@@ -1,0 +1,6 @@
+commands used
+    1) sed 's/ERROR/[CRITICAL]/' sample.log
+    2) sed 's/ERROR/[CRITICAL]/' sample.log >> sample_sed.log
+    3) sed '/DEBUG/d' sample_sed.log
+    4) sed -n '3,7p' sample_sed.log
+    5) sed 's/2024-01-10/REDACTED/g' sample_sed.log

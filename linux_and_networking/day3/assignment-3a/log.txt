@@ -1,0 +1,6 @@
+commands used:
+    1) grep "ERROR" sample.log
+    2) grep -c "ERROR" sample.log
+    3) grep -v "DEBUG" sample.log
+    4) grep -i "connection" sample.log
+    5) grep -n "ERROR" sample.log
