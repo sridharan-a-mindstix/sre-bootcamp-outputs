@@ -1,0 +1,5 @@
+3) yes the process is still running
+Diff kil -9 vs kill -15
+kill -9 is forcefully stopping a process without releasing any resources attached to it 
+whereas kill -15 is a gentle stopping process which will give time for the process to stop
+we have to use -15 always to keep the termination process safe, only use -9 if the process got stuck.

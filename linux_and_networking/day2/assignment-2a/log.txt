@@ -1,0 +1,6 @@
+4) which process consuming the highest cpu
+    PID TTY           TIME CMD
+  160 ??        19:03.38 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer -daemo
+5) Load Avg
+    Load average is the Avergae number of processes in the cpu for 1,5 and 15 minutes
+6 ) when pressing m inside top , the list is getting reordered by memory usage
