@@ -1,0 +1,2 @@
+4) .bashrc is the config file where we usually add aliases, environment variables, and update the PATH so the terminal can find our executables.
+.bash_profile runs first when we log in to the system, and it can load .bashrc settings as well.

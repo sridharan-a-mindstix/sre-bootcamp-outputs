@@ -1,0 +1,4 @@
+Commands Used:
+1) awk '{print $3}' sample.log | sort | uniq
+2) grep "ERROR" sample.log | sort -k1,2
+3) awk '{count[$2]++} END {for (t in count) print t, count[t]}' sample.log | sort
