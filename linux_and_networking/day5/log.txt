@@ -1,0 +1,6 @@
+1) Private Ip, No if someone wants to reach my machine they need a public ip. Private IP - 172.20.10.2, Public IP - 152.58.16.139
+2)  10.0.2.0/28 
+    32 - 28 = 4 usable bits
+    2^4 = 16
+    16 - 2 = 14
+3) whatsmyip.com only shows my public ip and my computer shows its private Ip

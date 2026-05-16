@@ -1,0 +1,90 @@
+1 ) 64 bytes/packet
+    avg rountrip time - 20 ms
+2) it is taking 64 hops max, the timeout happens because the traceroute didn't get the response 
+3) output 
+    Server:		192.168.0.1
+    Address:	192.168.0.1#53
+
+    Non-authoritative answer:
+    Name:	google.com
+    Address: 142.251.223.206
+    the ip address might change because of google's load balancers or geo based server routing
+4)  request headers 
+        GET /get HTTP/2
+        Host: httpbin.org
+        User-Agent: curl/8.7.1
+        Accept: */*
+    response headers
+        date: Fri, 15 May 2026 07:31:55 GMT
+        content-type: application/json
+        content-length: 253
+        server: gunicorn/19.9.0
+        access-control-allow-origin: *
+        access-control-allow-credentials: true
+    response status code
+        HTTP/2 200
+    response body
+                {
+        "args": {},
+        "headers": {
+            "Accept": "*/*",
+            "Host": "httpbin.org",
+            "User-Agent": "curl/8.7.1",
+            "X-Amzn-Trace-Id": "Root=1-6a06cbeb-2c28c89e36139a7a05028dcd"
+        },
+        "origin": "59.96.81.149",
+        "url": "https://httpbin.org/get"
+        }
+5) output
+        sridharan@mindstix-ka-MacBook-Air ~ % curl -v http://myapp.local:8080
+        * Host myapp.local:8080 was resolved.
+        * IPv6: (none)
+        * IPv4: 127.0.0.1
+        *   Trying 127.0.0.1:8080...
+        * Connected to myapp.local (127.0.0.1) port 8080
+        > GET / HTTP/1.1
+        > Host: myapp.local:8080
+        > User-Agent: curl/8.7.1
+        > Accept: */*
+        > 
+        * Request completely sent off
+        * HTTP 1.0, assume close after body
+        < HTTP/1.0 200 OK
+        < Server: SimpleHTTP/0.6 Python/3.9.6
+        < Date: Fri, 15 May 2026 08:26:28 GMT
+        < Content-type: text/html; charset=utf-8
+        < Content-Length: 1017
+        < 
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+        <html>
+        <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Directory listing for /</title>
+        </head>
+        <body>
+        <h1>Directory listing for /</h1>
+        <hr>
+        <ul>
+        <li><a href=".DS_Store">.DS_Store</a></li>
+        <li><a href=".localized">.localized</a></li>
+        <li><a href="day2_session.txt">day2_session.txt</a></li>
+        <li><a href="day3_session2.txt">day3_session2.txt</a></li>
+        <li><a href="day3_sessions.txt">day3_sessions.txt</a></li>
+        <li><a href="day4_session.txt">day4_session.txt</a></li>
+        <li><a href="heartbeat.log">heartbeat.log</a></li>
+        <li><a href="loop.sh">loop.sh</a></li>
+        <li><a href="nohup.out">nohup.out</a></li>
+        <li><a href="output.log">output.log</a></li>
+        <li><a href="sample.log">sample.log</a></li>
+        <li><a href="sample_sed.log">sample_sed.log</a></li>
+        <li><a href="sed_test.txt">sed_test.txt</a></li>
+        <li><a href="Visual%20Studio%20Code.app/">Visual Studio Code.app/</a></li>
+        </ul>
+        <hr>
+        </body>
+        </html>
+        * Closing connection
+6) Output 
+        * Could not resolve host: myapp.local
+        * Closing connection
+        curl: (6) Could not resolve host: myapp.local

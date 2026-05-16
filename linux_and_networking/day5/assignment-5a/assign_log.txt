@@ -1,0 +1,22 @@
+2)  total ips - 256
+    usable ips - 254
+    1 IP is reserved for the network address
+    1 IP is reserved for the broadcast address
+3) New subnet mask: /26
+    4 subnets:
+        192.168.1.0/26 - 192.168.1.1 - 192.168.1.62
+        192.168.1.64/26 - 192.168.1.65 - 192.168.1.126
+        192.168.1.128/26 - 192.168.1.129 - 192.168.1.190
+        192.168.1.192/26 - 192.168.1.193 - 192.168.1.254
+4) 192.168.1.0/26 
+    subnet address - 192.168.1.0
+    broadcast address - 192.168.1.63
+    first ip - 192.168.1.1
+    last ip - 192.168.1.62
+5) Yes it will work. because /26 has 62 usable ips
+6) i will use /27
+    why because /27 will give me exactly 30 ips
+        32 - 27 = 5
+        5^2 = 32
+        32 - 2 = 30
+    so there will be 0 unused ips
