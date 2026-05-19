@@ -1,0 +1,67 @@
+3) by default the curl did not followed the redirected response
+    default response:
+        HTTP/2 302 
+        date: Mon, 18 May 2026 08:53:25 GMT
+        content-length: 0
+        server: gunicorn/19.9.0
+        location: /redirect/1
+        access-control-allow-origin: *
+        access-control-allow-credentials: true
+    If we give -L , then it follows the redirect url automatically
+        Redirected Response:
+            HTTP/2 302 
+            date: Mon, 18 May 2026 08:59:10 GMT
+            content-length: 0
+            server: gunicorn/19.9.0
+            location: /redirect/1
+            access-control-allow-origin: *
+            access-control-allow-credentials: true
+
+            HTTP/2 302 
+            date: Mon, 18 May 2026 08:59:11 GMT
+            content-type: text/html; charset=utf-8
+            content-length: 215
+            server: gunicorn/19.9.0
+            location: /get
+            access-control-allow-origin: *
+            access-control-allow-credentials: true
+
+            HTTP/2 200 
+            date: Mon, 18 May 2026 08:59:11 GMT
+            content-type: application/json
+            content-length: 256
+            server: gunicorn/19.9.0
+            access-control-allow-origin: *
+            access-control-allow-credentials: true
+
+            {
+            "args": {}, 
+            "headers": {
+                "Accept": "*/*", 
+                "Host": "httpbin.org", 
+                "User-Agent": "curl/8.7.1", 
+                "X-Amzn-Trace-Id": "Root=1-6a0ad4df-4d8ee8a53d54880462fe761e"
+            }, 
+            "origin": "103.149.113.194", 
+            "url": "https://httpbin.org/get"
+            }
+4) output
+        HTTP/2 200 
+        date: Mon, 18 May 2026 09:03:52 GMT
+        content-type: application/json
+        content-length: 208
+        server: gunicorn/19.9.0
+        access-control-allow-origin: *
+        access-control-allow-credentials: true
+
+        {
+        "headers": {
+            "Accept": "*/*", 
+            "Host": "httpbin.org", 
+            "User-Agent": "curl/8.7.1", 
+            "X-Amzn-Trace-Id": "Root=1-6a0ad5f8-56aaeca015d45399676f5273", 
+            "X-My-Header": "hello-devops"
+        }
+        }
+5)  the response time - 9.2s
+    by using the --max-time we can set the waiting time for the client request

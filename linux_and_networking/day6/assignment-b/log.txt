@@ -1,0 +1,8 @@
+2) 
+    the error:
+        curl: (7) Failed to connect to github.com port 80 after 5 ms: Couldn't connect to server
+    why:
+        Because we defined the github's domain mapping locally as our localhost. since theres no server running on port 80 our machine
+        we get this error displaying the same.
+Reflection:
+    As in Docker, I think Kubernetes also might have a bridge where services on the same bridge does not need a ip.

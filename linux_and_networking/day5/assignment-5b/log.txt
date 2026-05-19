@@ -1,0 +1,50 @@
+1) github ip - 20.207.73.82
+        mx record:
+            github.com	mail exchanger = 0 github-com.mail.protection.outlook.com.
+        txt record:
+            github.com	text = "00Dd0000000hHE0=1TBKg000000TN2r"
+            github.com	text = "MS=6BF03E6AF5CB689E315FB6199603BABF2C88D805"
+            github.com	text = "calendly-site-verification=at0DQARi7IZvJtXQAWhMqpmIzpvoBNF7aam5VKKxP"
+            github.com	text = "google-site-verification=UTM-3akMgubp6tQtgEuAkYNYLyYAvpTnnSrDMWoDR3o"
+            github.com	text = "v=spf1 ip4:192.30.252.0/22 include:spf.protection.outlook.com include:_netblocks.google.com include:_netblocks2.google.com include:mail.zendesk.com include:_spf.salesforce.com include:servers.mcsv.net include:mktomail.com include:sendgrid.net ip4:62.253.2" "27.114 ip4:166.78.69.169 ip4:166.78.69.170 ip4:166.78.71.131 ~all"
+            github.com	text = "miro-verification=d2e174fdb00c71e0bcf58f8e58c3da2dd80dcfa9"
+            github.com	text = "google-site-verification=82Le34Flgtd15ojYhHlGF_6g72muSjamlMVThBOJpks"
+            github.com	text = "jamf-site-verification=XtaPNIYghF_e_xRDI8CjgQ"
+            github.com	text = "stripe-verification=f88ef17321660a01bab1660454192e014defa29ba7b8de9633c69d6b4912217f"
+            github.com	text = "docusign=087098e3-3d46-47b7-9b4e-8a23028154cd"
+            github.com	text = "adobe-idp-site-verification=b92c9e999aef825edc36e0a3d847d2dbad5b2fc0e05c79ddd7a16139b48ecf4b"
+            github.com	text = "apple-domain-verification=RyQhdzTl6Z6x8ZP4"
+            github.com	text = "MS=ms58704441"
+            github.com	text = "loom-site-verification=f3787154f1154b7880e720a511ea664d"
+            github.com	text = "atlassian-domain-verification=jjgw98AKv2aeoYFxiL/VFaoyPkn3undEssTRuMg6C/3Fp/iqhkV4HVV7WjYlVeF8"
+            github.com	text = "TAILSCALE-xOzoDvFUzZr5YYVCQFuD"
+            github.com	text = "facebook-domain-verification=39xu4jzl7roi7x0n93ldkxjiaarx50"
+            github.com	text = "MS=ms44452932"
+            github.com	text = "shopify-verification-code=t1YPwcmvnxZyBycaCpk1MPyWoFs72o"
+            github.com	text = "krisp-domain-verification=ZlyiK7XLhnaoUQb2hpak1PLY7dFkl1WE"
+2) specific DNS server 
+        a)  Server:		8.8.8.8
+            Address:	8.8.8.8#53
+
+            Non-authoritative answer:
+            Name:	github.com
+            Address: 20.207.73.82
+
+        b)  Server:		1.1.1.1
+            Address:	1.1.1.1#53
+
+            Non-authoritative answer:
+            Name:	github.com
+            Address: 20.207.73.82
+        
+        c) 8.8.8.8 and 1.1.1.1 are specific dns resolvers which will resolve my query.
+
+3)  nameserver 8.8.8.8
+    nameserver 4.2.2.2
+
+4)  * Server certificate:
+        *  subject: CN=github.com
+        *  start date: May  5 00:00:00 2026 GMT
+        *  expire date: Aug  2 23:59:59 2026 GMT
+
+    a) 2>&1, the output will be written instide stderr(2). we are redirecting it to stdout(1)
