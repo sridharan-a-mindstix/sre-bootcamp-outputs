@@ -1,0 +1,24 @@
+3) Its says my file is not yet staged
+4) now my output got chnaged to green indicating that it is staged and ready to be committed
+output:
+    0018790 (HEAD -> main) Added requirements file
+    9ab23c0 Added readme file
+    be9f104 Added app.py
+
+questions:
+1) Head is the last commit and the recent changes of the repo
+    ref: refs/heads/main
+2) commit be9f10490eccb640f7462e832832513fb9486c38
+    Author: Sridharan <sridharan@mindstix-ka-MacBook-Air.local>
+    Date:   Wed May 20 22:40:37 2026 +0530
+
+        Added app.py
+
+    diff --git a/app.py b/app.py
+    new file mode 100644
+    index 0000000..ad35e5a
+    --- /dev/null
+    +++ b/app.py
+    @@ -0,0 +1 @@
+    +print("Hello World")
+3) Staging area is to maintain a best practice to confirm the changes before committing it to the branch

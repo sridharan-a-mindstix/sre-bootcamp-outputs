@@ -1,0 +1,15 @@
+3) 802b7c6 (origin/main, origin/local-test, origin/HEAD, local-test) Added from another branch
+    b183970 (HEAD -> main, origin/remote-test) corrected the typo
+    6df6dc8 Edited Loop
+    aac7c7f Modified typo
+    0018790 Added requirements file
+    9ab23c0 Added readme file
+    be9f104 Added app.py
+4) index b2c0135..4aea5e0 100644
+    --- a/README.md
+    +++ b/README.md
+    @@ -1 +1,2 @@
+    this is a sample readme file for thr bootcamp
+    +adding this to learn diff between git fetch vs pull
+
+if i did git pull directly the changes from the remote repo would've been directly merged into my local repo

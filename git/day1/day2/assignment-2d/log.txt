@@ -1,0 +1,9 @@
+answer in your log:
+1) after the merge the graph clearly shows where the branches are created and the merges made separately 
+after the rebase every commit i made becomes a single line one by one
+2) No, after the rebase the hashes has changed, because rebase will do new commits instead of referring to the old one.
+3) Merge commit is a commit where the changes we made will be applied to the current branch in a single commit . No rebase will not create a merge commit
+4) Rebase actually modified the timeline of the branches. It merged all the commits made into a single timeline , so that we cannot 
+track the changes made individually.
+5) i would prefer merge if i'm working with a shared branches like main to preserve history and
+when im working in my own branches i can use rebase.
