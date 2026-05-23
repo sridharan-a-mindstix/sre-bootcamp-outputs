@@ -1,0 +1,10 @@
+1) hint: You have divergent branches and need to specify how to reconcile them.
+fatal: Need to specify how to reconcile divergent branches.
+2) ! [rejected] shared-feature -> shared-feature (non-fast-forward)
+error: failed to push some refs
+3) both of them has different commit hashes and parent hashes
+
+log question:
+1) the person 2's commit is locally exiting but he has to rebase or cherry-pick to push
+2) force blindly overwrites whereas force-with-lease checks the remote's commit's state and rejects immediately if conflicts arise
+3) force push is accepted if you use it on your own branch and you have the whole knowledge of what you are doing

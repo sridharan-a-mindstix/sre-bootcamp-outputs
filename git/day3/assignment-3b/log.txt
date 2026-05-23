@@ -1,0 +1,17 @@
+1) before commit message changed
+        3f939a5 (HEAD -> main) Commit E
+        02aad55 Commit D
+        679604d Commit C
+        3210629 Commit B
+        642b2f0 Commit A
+    after 
+        95d9028 (HEAD -> main) Commit E
+        b749514 Commit D
+        6568e11 This Commit C
+        3210629 Commit B
+        642b2f0 Commit A
+        the commit from c changed their hashes
+
+log question:
+this will cause merge conflicts if those commited in the same files or else splitted history, this happens because the commit hash
+changes and the git now will conside each of them as a new commit.

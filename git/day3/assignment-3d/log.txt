@@ -1,0 +1,5 @@
+log question:
+1) i would immediately revert the commit once i find out
+2) because the credentials might still be in the cache or cloned, forked by another person
+3) The credentials must be rotated and updated immediately in the env files and add the config file to the .gitignore to prevent
+future leaks
