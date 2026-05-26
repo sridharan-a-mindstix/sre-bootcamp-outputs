@@ -1,0 +1,8 @@
+2)  because trusted ploicy is only for authentication and policy permissions are for authorization like what can they do,
+    with that role.
+    if you change ec2 to lambda then ec2 will no longer be able to assume the role and access s3.
+
+5)         "Arn": "arn:aws:sts::577267184007:assumed-role/s3-admin-role/my-test-session"
+
+log ques:
+    no, by assuming s3 readonly role, we can perform those action we defined in the permission policy for that role.

@@ -1,0 +1,17 @@
+4)  userid- this tells me iam user's id 
+    account - this tells me my account id in aws
+    arn - this gives me the full contect of my amazon resource name with username,account id, user type
+
+8)  yes,
+    {
+    "Reservations": []
+    }
+
+9) i couldn't be able to run instances, the error i got:
+    aws: [ERROR]: An error occurred (InvalidAMIID.NotFound) when calling the RunInstances operation: The image id '[ami-12345]' does not exist
+
+
+log ques:
+1)  managed policies are cretaed,modified and managed by AWS itself and can be apllied to multiple principals,
+    but inline policies are customized policies and can be attached to only one principal for a specific use case
+2)  because the policy i attached for the group is ec2readonlyaccess, so that when i try to run an instance it will throw the access denied error.
