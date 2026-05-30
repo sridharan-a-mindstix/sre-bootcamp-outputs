@@ -1,0 +1,3 @@
+log ques:
+    it will fail in the first step (Network) itself, because there is no route defined for the priavte subnet route table to 
+    allow the traffic from my ip into the private subnet

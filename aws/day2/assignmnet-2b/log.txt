@@ -1,0 +1,6 @@
+4) No, because the request first goes via NACL.
+5) No, SGs does not have any explicit Deny.
+
+log Ques:
+    Even when the SGs allows the reauest must satisfy the NACL rules to reach SGs.
+    Same Even when the NACL allows and the SG denies, the request will not be permitted inside the resource
