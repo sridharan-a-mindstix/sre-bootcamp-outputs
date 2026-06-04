@@ -1,0 +1,5 @@
+5) yes, my data is still there.
+6) The instance must be in the same Availability Zone as the volume. 
+
+log ques:
+    we must create a snapshot of the volume and create a ebs from that snapshot in a different AZ.

@@ -1,0 +1,4 @@
+2) No,
+3) in the NACL i allowed the inbound for http from the internet
+4) the output log file contains the information about initialization output of the vm.
+5) I must stop the instace to edit the user Data

@@ -1,0 +1,19 @@
+4)  a)  the ip 169.254.169.254 is IMDS provided by AWS itself. Its an Meta Data provider service runing inside my EC2 
+    so that i can access the metadata whenever i want without reaching the internet.
+    b)  
+        1)  i-0a7eb520ee7cc6bb7
+        2)  <?xml version="1.0" encoding="iso-8859-1"?>
+            <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+            <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+            <head>
+            <title>404 - Not Found</title>
+            </head>
+            <body>
+            <h1>404 - Not Found</h1>
+            </body>
+            </html>
+        the first curl returned my instace's id and the second returned my intsance's iam role status.
+        since my ec2 doesn't have any role, it returned 404.
+
+5)  since i don't have any role attached to my ec2, i cannot read s3 file/directories
