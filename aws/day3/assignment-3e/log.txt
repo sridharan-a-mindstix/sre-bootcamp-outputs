@@ -1,0 +1,7 @@
+5) yes, i can see the files i created in the server 1
+
+log ques:
+    a)  i would use EBS when my ec2 server requires an additional storage and i want the data to be in a specific AZ.
+        whereas i would use EFS for a shared file system over a region, so multiple AZ instances can access it.
+    b) No EBS is a AZ specific but EFS is region specific
+    
