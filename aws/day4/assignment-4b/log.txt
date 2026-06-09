@@ -1,0 +1,5 @@
+3) aws: [ERROR]: An error occurred (AccessDenied) when calling the ListBuckets operation: User: arn:aws:iam::577267184007:user/sridhar-aws is not authorized to perform: s3:ListAllMyBuckets because no identity-based policy allows the s3:ListAllMyBuckets action
+5)  Bucket policy Wins.
+
+log ques:
+     because an explicit deny always wins in AWS.

@@ -1,0 +1,16 @@
+1) Unable to locate credentials. You can configure credentials by running "aws login".
+2) 
+    a) Yes. i can list the bucket.
+    b) fatal error: An error occurred (AccessDenied) when calling the GetObject operation: Access Denied
+    c) Yes, In the first scenario i could not access the S3 as i dont have the credentials, but now i can access
+        a bucket and list objects but i dont have the permissions to do any other actions.
+
+3) fatal error: An error occurred (403) when calling the HeadObject operation: Forbidden
+    Same access denied Error
+
+log:
+| Failure Mode              | Scenario                                               | Exact Symptom                                   | Fix                                         |
+| ------------------------- | ------------------------------------------------------ | ----------------------------------------------- | ------------------------------------------- |
+| No credentials            | EC2 has no IAM role                                    | `Unable to locate credentials`                  | Attach an IAM role or provide credentials   |
+| Missing action permission | Role has `s3:ListBucket` but lacks `s3:GetObject`      | `AccessDenied when calling GetObject operation  | Add `s3:GetObject` permission               |
+| Wrong resource scope      | Role has `s3:GetObject` but for a different bucket ARN | `AccessDenied when calling GetObject operati    | Correct the bucket/object ARN in the policy |

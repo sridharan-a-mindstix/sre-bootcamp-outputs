@@ -1,0 +1,11 @@
+break 1:
+    target group status is unhealthy
+    Unhealthy: Health checks failed with these codes: [404]
+
+break 2:
+    health check status is unhealthy
+    in break 1 we got a HTTP response from the server, but here couldn't even establish a connection to server
+
+break 3:
+    no 
+    When I restore the SG of Ec2 i wiould give source as ALB-SG, so that nobody from the internet can access my machine directly.

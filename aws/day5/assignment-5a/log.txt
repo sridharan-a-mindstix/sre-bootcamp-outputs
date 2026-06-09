@@ -1,0 +1,5 @@
+log ques:
+    that means ALB undertsands HTTP/HTTPS and make routing decisions 
+    NLB only understands TCP/UDP/TLS and makesrouting decisions based on ip and port
+
+    I would use NLB for high-performance services like streaming and live actions.
