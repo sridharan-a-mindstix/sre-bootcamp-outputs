@@ -1,0 +1,2 @@
+1) automatically another instace spawned in 2 minutes
+2) AWS selected an instance according to the Auto Scaling Group's termination policy. The choice is not guaranteed to be the oldest or newest instance.
