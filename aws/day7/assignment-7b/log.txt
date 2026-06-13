@@ -1,0 +1,16 @@
+Scenario 1:
+    1) Check does the vpc has a Internet Gateway
+    2) Does the Public subnet's NACL Allows Both inbound and outbound for the HTTP/HTTPS request
+        2.1) Does they Allow Ephemeral Ports for outbound (1024-65535)
+    3) Does the security group allows outbout via Ephemeral Ports
+    4) Does it have route to IGW
+    5) SSH into the server and check LOGS
+
+Scenario 2:
+    502 Bad Gateway usually means we are trying to connect to the wrong port.
+    so ALB is trying in the wrong port
+    i will use CLI to list the listeners and check which port it is sending the traffics and compare it with the service port
+
+Scenario 3:
+    S3 bucket policy needs to approve lambda to read
+    

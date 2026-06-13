@@ -1,0 +1,8 @@
+3) yes i got the email.
+
+log ques:
+    1)  logs:CreateLogGroup
+        logs:CreateLogStream
+        logs:PutLogEvents
+        logs:DescribeLogStreams
+    2) I attached an IAM role to my EC2 by creating a custom role

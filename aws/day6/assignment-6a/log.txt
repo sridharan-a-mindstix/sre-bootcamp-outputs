@@ -1,0 +1,2 @@
+3) My laptop could access the private bucket because the AWS CLI was using IAM credentials configured locally. S3 evaluates IAM permissions, not whether the request originates from EC2.
+4) If i revoke my s3 access in the role, then my lap could not be able to access but my ec2 can
