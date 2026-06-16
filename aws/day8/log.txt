@@ -1,0 +1,2 @@
+IAM ROLE:
+    I gave only S3:ListBucket and S3:GetObject for ec2 so that my ec2 can read my code from my S3
