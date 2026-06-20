@@ -1,0 +1,20 @@
+1) terraform init downloaded provider plugin for aws and put it inside .terraform/
+2) yes
+3) yes
+4) 2 resources will be created. + symbol indicates that those resources are going to be newly created
+5) verified
+5) aws_security_group.web_sg: Refreshing state... [id=sg-0cd3f4fe6bfe6f105]
+aws_instance.web: Refreshing state... [id=i-07019aae647ae77f9]
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration and found no differences, so no changes are needed.
+
+It compares the state file with my real resources
+
+6) this is where the provider files will be downloaded and we need not to commit this to git as it is large and machine specific,
+    can be obtained again by terraform init
+
+7)  dependency lock file which will have the exact provider version and other dependency details
+
+8) it will create the Security Group first and obtains it's id.

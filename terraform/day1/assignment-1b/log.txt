@@ -1,0 +1,6 @@
+2) it will create 3 resources
+3) managed resource has not been declared in the root module
+5) No terraform says it will update the SG in-place.
+
+log ques:
+    terraform will say the resource must be replaced with symbol -/+ for example as ec2

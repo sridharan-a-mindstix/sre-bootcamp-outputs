@@ -1,0 +1,5 @@
+6) it shows the outputs i defined in the output.tf file except db pass
+7) terraform wll update the instances in-place.
+
+log ques:
+    terraform still stores the db pass at state file. so state file becomes sensitive and we should not commit state files to git or anywhere.

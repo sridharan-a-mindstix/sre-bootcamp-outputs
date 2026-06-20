@@ -1,0 +1,20 @@
+part 1:
+2) yes , it detects manual changes and it wants to remove those
+3) the manually added tag is removed, since state file is in charge
+
+part 2:
+2) it says , it will create the instances again and outputs will change 
+
+part 3:
+3) i got 400 error saying invalid instance id from aws api call
+
+4) we can use refresh if we didnt changed the id, since we changed the id itself we can use remove the
+state from the terraform and import it again 
+
+part 4:
+1) yes
+2) we can store it in s3 encrypted storage
+
+log ques:
+1) because terraform internally calls aws api's to check and compare its state file with api response
+2) i would use refresh when there any changes manually made in aws.
