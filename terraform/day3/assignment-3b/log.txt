@@ -1,0 +1,8 @@
+3) 4 resources total
+      + dev-public-ip  = (known after apply)
+  + prod-public-ip = (known after apply)
+
+Outputs:
+
+dev-public-ip = "98.84.127.245"
+prod-public-ip = "34.226.212.67"

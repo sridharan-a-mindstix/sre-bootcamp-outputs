@@ -1,0 +1,24 @@
+2)  aws_instance.web[0]
+    aws_instance.web[1]
+    aws_instance.web[2]
+
+part 2:
+    1) 1 resource
+    2) 0 resource
+    3) worker instance
+    4) because now the worker instance moved from 2 index to 1st index, so terraform thought that we modified api instance and destroyed worker
+
+part 3:
+    6)  aws_instance.web["api"]  
+        aws_instance.web["app"]
+        aws_instance.web["worker"]
+    7)  it says it will destroy the api instance only
+
+    8)  No, only api instance got destroyed
+
+log ques:
+    With count, Terraform identifies resources by their numeric index.
+    When an item is removed from the middle of a list, everything after it shifts left.
+    Terraform sees those shifted resources as different resources and may destroy and recreate them even though you only removed one item.
+
+    i would use count if and only if the resources were truly identical. 
