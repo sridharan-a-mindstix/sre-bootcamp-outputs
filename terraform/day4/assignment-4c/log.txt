@@ -1,0 +1,12 @@
+1) │ 
+│ Resource aws_instance.day4tfec2 has lifecycle.prevent_destroy set, but the plan calls for this resource to be destroyed. To avoid
+│ this error and continue with the plan, either disable lifecycle.prevent_destroy or reduce the scope of the plan using the -target
+│ option.
+╵
+2) No changes detected, if i compare this with the file where no ignore_changes mentioned, terraform would show me as it will remove the manually added tag.
+
+3) with create_before_destroy the order would be create he new instance and delete the old,
+    without it Terraform will destroy first and then creates the new one
+
+log ques:
+    prevent_destroy will only be useful still the resource block itself gets deleted.

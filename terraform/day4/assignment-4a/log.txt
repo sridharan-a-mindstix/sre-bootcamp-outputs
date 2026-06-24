@@ -1,0 +1,28 @@
+4) yes
+5) yes, it is getting the state file from s3
+
+6) Acquiring state lock. This may take a few moments...
+╷
+│ Error: Error acquiring the state lock
+│ 
+│ Error message: operation error DynamoDB: PutItem, https response error StatusCode: 400, RequestID: 47E0UUS7G3HMOA17HH88AIRH4VVV4KQNSO5AEMVJF66Q9ASUAAJG, ConditionalCheckFailedException: The
+│ conditional request failed
+│ Lock Info:
+│   ID:        59224891-b1ba-ebec-e983-8e412006c9a3
+│   Path:      terraform-backend-bucket-bootcmap/bootcamp/dev/terraform.tfstate
+│   Operation: OperationTypeApply
+│   Who:       sridharan@mindstix-ka-MacBook-Air.local
+│   Version:   1.15.6
+│   Created:   2026-06-24 08:04:50.482376 +0000 UTC
+│   Info:      
+│ 
+│ 
+│ Terraform acquires a state lock to protect the state from being written
+│ by multiple users at the same time. Please resolve the issue above and try
+│ again. For most commands, you can disable locking with the "-lock=false"
+│ flag, but this is not recommended.
+
+
+log ques: 
+    iam permissions like getobject,putobject,deleteobject should be only assigned to trusted entities
+    2) resources could be overwritten and everything will get collapsed.
