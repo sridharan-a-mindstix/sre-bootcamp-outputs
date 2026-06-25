@@ -1,0 +1,8 @@
+Part 2:
+    10) After imported, terraform will treat the resources as it cretaed itself.
+
+Log ques:
+    1) yes, teraform destroyed the resources.
+    2)  import only adds the state but doesn't modify config so terraform will apply whatever the config we wrote in    
+        resource block.
+    3)  the challenge is to macth the config with reality, import does not automatically detects the config of the imported resource.

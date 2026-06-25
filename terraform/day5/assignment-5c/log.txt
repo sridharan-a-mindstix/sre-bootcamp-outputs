@@ -1,0 +1,27 @@
+broken conf 1
+    i got:
+        Error: Cycle: aws_security_group.b, aws_security_group.a
+    how i fixed:
+        Create security groups first and define ingress rules separately using aws_security_group_rule.
+
+broekn conf 2:
+    4) yes terraform realized that i removed the instance manually.
+    5)  now terraform says it will create one.
+    6) now terraform wants to add a new instance.
+
+broken conf 3:
+    error:
+        │ Error: Reference to undeclared resource
+        │ 
+        │   on main.tf line 11, in output "instance_ip":
+        │   11:   value = aws_instance.web.public_dns    # wrong attribute name
+        │ 
+        │ A managed resource "aws_instance" "web" has not been declared in the root module.
+
+    terraform detects this while constructing a graph
+    
+    terraform validate checks:
+        Syntax
+        Resource references
+        Expression correctness
+        Configuration structure
