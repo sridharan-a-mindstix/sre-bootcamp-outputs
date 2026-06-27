@@ -1,0 +1,17 @@
+1)  Python cache files
+    Virtual environments
+    Git folder
+    Log files
+    Environment files
+
+3)  No
+4) Yes
+
+7)  This time the build took only 5-7 seconds
+
+8)  Base image
+    WORKDIR
+    COPY requirements.txt
+    pip install
+
+9)  every step from the requirements didn't used the cache.

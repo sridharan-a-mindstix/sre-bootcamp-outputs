@@ -1,0 +1,7 @@
+5)  236MB
+6) now it returned the python version instead of starting the app.
+7)  docker ran others.py which deosnt exists
+
+log ques:
+    because docker caches each layer and our app code likely to be change often but our requirements chnages rarely,
+    so copying it before our app code will let docker uses its cached layer.
