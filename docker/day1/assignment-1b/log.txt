@@ -1,0 +1,27 @@
+2)  alphine - 88mb
+    slim - 214mb
+
+3)  slim - 10
+    alphine - 11
+
+5) yes slim has both bash and sh shell.
+
+log ques:
+    -it gives interactive terminal
+    without -i we cannot give inputs
+    without -t we cannot have terminal experience
+
+
+    alphine linux is extremely 
+            faster downloads
+            less storage
+    slim :
+        more tools/libraries
+        more storage consuming
+
+    tradeoffs:
+        Some software may not compile correctly
+        Missing packages/tools
+
+    I was not actually inside a vm. 
+    I was interacting with a shell process of the container.

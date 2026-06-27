@@ -1,0 +1,14 @@
+columns i saw:
+    CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+3) 259mb
+    latest
+
+5) docker ps only shows running containers, so -a flag used to show all.
+
+log ques:
+    images is an blue print containg instructions on how to launch our app, 
+    container is an running instance of an image.
+
+    No, because docker first searches the image locally if not then only it will pull ffrom the docker hub.
+
+    stopping a container would still preserve the metadata and filesystem but removing it will completely erase it.

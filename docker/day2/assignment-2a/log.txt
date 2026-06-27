@@ -1,0 +1,8 @@
+4)  0.0.0.0:9090->80/tcp
+    0.0.0.0:9091->80/tcp
+5)  Because no host port is mapped to the container's port 80. The web server is running inside the container, 
+    but Docker has not exposed it to the host machine. 
+    It can only be reached by other containers on the same Docker network
+
+log ques:
+    means Docker is listening for connections on port 9090 from any network interface.

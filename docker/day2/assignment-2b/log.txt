@@ -1,0 +1,7 @@
+2)  it shows the nginx startup logs.
+3)  now it shows the request logs which i did.
+6)  yes.
+7)  Once we remoove the container, all data inside that container will be gone, docker will create a new container from the image.
+
+log ques:   
+    to make that changes persists even if the container got deleted is to attach a volume with our local directory
