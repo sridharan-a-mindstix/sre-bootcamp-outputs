@@ -1,0 +1,7 @@
+3)  v1 - 236MB
+    Multistage - 220MB
+4)  yes
+5) yes, pip is available
+
+log ques:
+    Multi-stage builds provide much greater benefits for applications that require compilers, SDKs, or large build environments.

@@ -1,0 +1,3 @@
+2)  No.
+3)  yes, 5 lines
+4)  No, i needed to restart as im using Flask

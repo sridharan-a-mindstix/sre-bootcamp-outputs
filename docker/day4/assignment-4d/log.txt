@@ -1,0 +1,3 @@
+log ques:
+    nothing is going to happen to v1.
+    if anyone pulls latest, they will pull the newly tagged v2 image as latest points to v2.

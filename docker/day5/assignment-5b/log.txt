@@ -1,0 +1,7 @@
+5)  yes.
+6)  yes the counter incremneted from where it left off. 
+    Redis stored the data inside its container. Removing the container removed that data.
+7)  yes.
+
+log ques:
+    docker can resolve ip of containers by name if we refer the dns name withinin the same network.

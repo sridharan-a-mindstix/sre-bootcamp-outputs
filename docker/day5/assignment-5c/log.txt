@@ -1,0 +1,10 @@
+4)  yes
+5)  nginx logs shows the traffic going though
+6)  my app logs shos the request i hit
+
+log ques:
+    No. Without the -p 5000:5000 option, Docker does not publish the container's port to the host machine.
+
+    X-Real-IP forwards the original client's IP address to the Flask application.
+
+    proxy_set_header Host $host forwards the original Host header from the client's request to the Flask application.

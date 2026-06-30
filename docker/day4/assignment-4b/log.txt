@@ -1,0 +1,5 @@
+1)  root
+5)  cannot create /etc/test.txt: Permission denied
+
+log ques:
+    Before switching to the non-root user, create the directory and change its ownership while still running as root.

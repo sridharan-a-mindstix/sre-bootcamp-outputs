@@ -1,0 +1,9 @@
+3)  Hello from Flask inside Docker! Environment: development
+4)  Hello from Flask inside Docker! Environment: staging
+6) yes
+
+log ques:
+    Yes. If the .env file contains secrets (such as passwords or API keys), 
+    it should be listed in .dockerignore so it is not copied into the Docker build context.
+    No, env file should not be in the image as images can be published to registries.
+    --env-file gives env values at runtime, making the docker image dynamically adjusted with values.

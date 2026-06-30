@@ -1,0 +1,56 @@
+Scenario 1:
+    symptom:
+        The cmd command started with pytohn misspelled.
+    command:
+        I overrided that while using the run command
+    Fix:
+        Fixed it by overriding it with run command.
+
+Scenario 2:
+    symptom:
+        The app is running listening on port 5000
+    Command:
+        docker ps
+    fix:
+        I removed the container and ran a new container with the correct ports
+
+
+Scenario 3:
+    symptom:
+        The Module not found error
+    command:
+        docker logs flask-app
+    fix:
+        Edited the docker image to include the config.py also.
+
+Scenario 4:
+    symptom:
+        Error is showing localhost
+    command:
+        docker logs flask-app
+    fix:
+        I edited the app.py code to connect to Redis host instead of local host
+
+Scenario 5:
+    symptom:
+        Permission denied
+    command:
+        RUN mkdir /app/logs
+        RUN chown appuser:appuser
+    fix:
+        I created the logs directory and changed the ownership to the non-root user.
+
+Scenario 6:
+    1)  Because Docker thaought that it already cached the layer where it installed python dependencies.
+    2)  We copied the whole project into the image and ran pip install.
+    3)  method 1:
+            we can use --no-cache-dir
+                tradeoffs:
+                    slower and ignore all the cached layers
+        method 2:
+            copy requirements.txt first and then run pip install
+            tradeoffs:
+                We have to edit the docker image and build it again
+
+Scenario 7:
+    It Exited the container immediately.
