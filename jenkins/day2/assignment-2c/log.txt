@@ -1,0 +1,11 @@
+1)  yes.
+2) Build failed
+3) No i got only ******
+4) I got bad substituition error
+
+log ques:
+    Not necessarily. If the exact secret is printed normally, 
+    Jenkins will usually mask it as ****, so someone reading the build log cannot recover the full credential from that output.
+
+    Masking can protect against accidental Log exposure but it cannot gaurentee the full protection
+    

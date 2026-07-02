@@ -1,0 +1,20 @@
+1)  the jobs are stored under /var/jenkins_home/jobs/
+    the config is here cat jobs/demo-jenkins/config.xml and its in xml format
+
+2)  i got 184 plugins installed. each plugins has meta data and their java package
+
+3)  for me the log file was here /var/log/apt/history.log and it has the logs for the plugins downloaded
+
+4)  this folder has jenkins encryption keys and master keys, so this should never be commited to github.
+
+5)  Started by user ha:EAAAASridharan A
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/demo-jenkins
+[demo-jenkins] $ /bin/sh -xe /tmp/jenkins7653432455447645888.sh
++ echo Hello there from S7s jenkins
+Hello there from S7s jenkins
+Finished: SUCCESS
+$ 
+
+log ques:
+    Yes. All Jenkins data persists in the jenkins_home Docker volume,

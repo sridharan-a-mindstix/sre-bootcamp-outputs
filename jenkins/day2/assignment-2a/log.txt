@@ -1,0 +1,12 @@
+4)  Stage A from B Var: null
+5)  double quotes print the groovy variable but single quote prints empty line.
+    output:
+        + echo i-am-groovy
+        i-am-groovy
+        [Pipeline] sh
+        + echo
+6)  No it returns null.
+    output:
+        + LOCAL=shell-local
+        [Pipeline] sh
+        + echo

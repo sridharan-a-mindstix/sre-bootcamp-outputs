@@ -1,0 +1,7 @@
+4)  It contains many informations such as paramters, execution command and time
+
+log ques:
+    It is a built-in environment variable automatically provided by Jenkins for every build.
+    
+    BUILD_ID, BUILD_URL, BUILD_TAG, JOB_NAME, JOB_BASE_NAME, WORKSPACE, JENKINS_HOME, JENKINS_URL, NODE_NAME, NODE_LABELS, 
+    EXECUTOR_NUMBER, and SCM-related variables such as GIT_COMMIT and GIT_BRANCH when Git is used.

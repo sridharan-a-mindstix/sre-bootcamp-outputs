@@ -1,0 +1,13 @@
+1)  yes
+2)  yes
+3)  the containers were removed after the build finishes, so i couldnt see any containers.
+4)  Running on:
+    + hostname
+    518c4b1fa4ab
+    + pwd
+    /var/jenkins_home/workspace/assignment-2b (Stage wise agents)
+    + whoami
+    root
+
+log ques:
+    yes, i can access the file i wrote in the stage 1 as it was stored inside the workspace

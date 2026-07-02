@@ -1,0 +1,9 @@
+3)  No the secrets are encrypted.
+
+log ques:
+    withCredentials is a Jenkins Pipeline step provided by the Credentials Binding Plugin.
+    It:
+    Retrieves a credential by its ID.
+    Makes it temporarily available to the Pipeline as an environment variable or file.
+    Masks the secret in the console log to prevent accidental exposure.
+    Removes the secret from the environment after the block ends.
